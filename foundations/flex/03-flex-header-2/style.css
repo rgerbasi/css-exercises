@@ -46,3 +46,22 @@ a {
 ul {
   list-style-type: none;
 }
+
+/* going to try to do the solutions here */
+.header {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  gap: 16px;
+}
+.links {
+  margin:0;
+  padding: 0;
+  display: flex;
+  flex: 2 0 auto;
+  gap:8px;
+}
+
+.notifications, .profile-image{
+  flex:none
+}
