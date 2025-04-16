@@ -1,6 +1,9 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -9,11 +12,17 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+  margin: 8px;
 }
-
+/* The margin from these could've been the padding in the parent element */
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  margin: 8px;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 8px;
 }
 
 a {
