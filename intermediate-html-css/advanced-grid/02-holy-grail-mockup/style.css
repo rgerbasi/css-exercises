@@ -89,3 +89,64 @@
   font-size: 13px;
   font-weight: normal;
 }
+
+/* solution */
+body,html {
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 4px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-column: span 2;
+  align-items: center;
+}
+
+.menu ul {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10%;
+  justify-content: end;
+}
+.nav{
+  display: grid;
+  align-items: center;
+}
+.nav ul{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+.sidebar{
+  grid-row: span 2;
+  display: grid;
+  gap: 50px;
+}
+.sidebar div{
+  display: grid;
+  place-items: center;
+}
+
+.article {
+  grid-column: 2;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));;
+  gap: 15px;
+}
+.article .card{
+  height: 200px;
+}
+
+.footer {
+  grid-column: span 2;
+}
